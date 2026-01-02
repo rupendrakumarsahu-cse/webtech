@@ -1,0 +1,117 @@
+Step 1: Install Git
+
+        Go to https://git-scm.com
+
+        Download Git for Windows
+
+        Install → click Next for all options
+
+        Restart your PC
+
+ Verify installation:
+  
+ in CSS =>
+            git --version
+
+Step 2: Create Project Folder
+
+          Create a folder (example): portfolio
+
+          Inside the folder, create:
+
+          index.html
+
+          style.css (optional)
+
+  Example index.html:=>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <h1>Hello, I am Rupendra</h1>
+    <p>CSE AI & ML Student</p>
+</body>
+</html>
+
+Step 3: Open Folder in VS Code
+
+            Right click on folder → Open with Code
+
+Step 4: Initialize Git Repository
+
+            Open Terminal in VS Code (Ctrl + `) and type:  git init
+
+
+ => Git repository initialized
+
+Step 5: Add Files to Git 
+        git add .
+
+Step 6: Commit Changes
+        git commit -m "Initial commit - portfolio website"
+
+Step 7: Create Repository on GitHub
+
+        Go to https://github.com
+
+Click New Repository
+
+Repository name: portfolio
+
+     Set Public
+
+Click Create repository
+
+Step 8: Connect Local Repo to GitHub
+
+               Copy commands from GitHub and paste in terminal:
+
+          git branch -M main
+          git remote add origin https://github.com/USERNAME/portfolio.git
+          git push -u origin main
+
+
+=> Code successfully pushed to GitHub
+
+PART B: Deploy Portfolio Using GitHub Pages
+       
+Step 9: Enable GitHub Pages
+       Open your GitHub repository
+
+        Click Settings
+
+        Click Pages
+
+        Under Source:
+
+        Branch: main
+
+        Folder: /root
+
+         Click Save
+
+Step 10: Website Live 
+
+         After 1–2 minutes, your site will be live at:
+
+         https://USERNAME.github.io/portfolio/
+
+PART C (Optional): Deploy Using Netlify
+Netlify Steps:
+
+         Go to https://www.netlify.com
+
+         Sign up using GitHub
+
+         Click Add new site → Import from Git
+
+         Select GitHub
+
+         Choose your portfolio repository
+
+        Click Deploy
+
+=> Netlify gives a live URL instantly
